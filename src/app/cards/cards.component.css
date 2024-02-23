@@ -1,0 +1,9 @@
+.example-card {
+    max-width: 350px;
+    cursor: pointer;
+  }
+  
+  .example-header-image {
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2022/12/17/Cute-And-Adorable-Cartoon-Fluffy-White-Bunny-4k-52849116-1.png');
+    background-size: cover;
+  }
