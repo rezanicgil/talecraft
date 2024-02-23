@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+ngb-carousel .wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 55%; /* Keep ratio for 900x500 images */
+}
+ngb-carousel .wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.carousel-item,
+.carousel-item img {
+  height: 600px; /* Örnek sabit yükseklik */
+  width: 100%; /* Genişliği ekran genişliğine uyarlar */
+  object-fit: cover; /* Resimleri boyutlandırırken oranını korur */
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ekranın tam yüksekliğini kullanır */
+}
+
+.picsum-img-wrapper {
+  margin: auto; /* Otomatik marj ile ortalanır */
+  width: 80%; /* Genişlik, ekran genişliğinin %80'i olarak ayarlanır */
+  padding-top: 20px; /* Üstte boşluk bırakır */
+  padding-bottom: 20px; /* Altta boşluk bırakır */
+}
+
+img.d-block {
+  width: 100%; /* Resimleri konteyner genişliğine sığdırır */
+  max-height: 800px; /* Resimlerin maksimum yüksekliğini sınırlar */
+  object-fit: contain; /* Resimleri orantılı bir şekilde sığdırır */
+}
+
+@media (min-width: 993px) {
+  img.d-block {
+    width: 100%; /* Resimleri konteyner genişliğine sığdırır */
+    max-height: 900px; /* Resimlerin maksimum yüksekliğini sınırlar */
+    object-fit: contain; /* Resimleri orantılı bir şekilde sığdırır */
+  }
+  .carousel-cap-txt {
+    font-size: 2em;
+  }
+
+  .carousel-item,
+  .carousel-item img {
+    height: 600px; /* Örnek sabit yükseklik */
+    width: 100%; /* Genişliği ekran genişliğine uyarlar */
+    object-fit: cover; /* Resimleri boyutlandırırken oranını korur */
+  }
+}
+
+.sticky-text {
+  position: fixed; /* Elemanı sabitler */
+  bottom: 0; /* Alt kenardan konumlandırır */
+  left: 0; /* Sol kenardan konumlandırır */
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arkaplan */
+  color: white; /* Yazı rengi */
+  padding: 10px; /* İç boşluk */
+  margin: 10px; /* Dış boşluk */
+  border-radius: 5px; /* Köşeleri yuvarlaklaştırır */
+  font-size: x-large;
+}
+
+.sticky-text:hover {
+  cursor: pointer;
+  color: rgb(166, 211, 250);
+}

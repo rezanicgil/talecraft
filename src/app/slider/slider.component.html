@@ -1,0 +1,20 @@
+<body>
+  <div class="container-fluid">
+    <ngb-carousel
+      *ngIf="images"
+      [showNavigationArrows]="true"
+      [showNavigationIndicators]="false"
+      [interval]="0"
+    >
+      <ng-template ngbSlide *ngFor="let image of images; let i = index">
+        <div class="picsum-img-wrapper">
+          <img [src]="image" alt="Random slide" class="d-block w-100" />
+        </div>
+        <div class="carousel-caption">
+          <h3 class="carousel-cap-txt">Sayfa {{ i + 1 }}, örnek yazı....</h3>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <p class="sticky-text">Geri Dön</p>
+</body>
