@@ -10,6 +10,7 @@ import { Tale } from '../models/tale.model';
 import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-card',
@@ -23,11 +24,13 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
     MatBadgeModule,
     CommonModule,
     MatGridListModule,
+    MatPaginatorModule,
   ],
 })
 export class CardComponent implements OnInit {
   tales: Tale[] = [];
   cols: number = 0;
+  pageEvent: PageEvent | undefined;
   constructor(
     private router: Router,
     public dialog: MatDialog,
@@ -50,13 +53,9 @@ export class CardComponent implements OnInit {
           this.cols = 2;
         } else if (result.breakpoints[Breakpoints.Medium]) {
           this.cols = 3;
-        } else if (
-          result.breakpoints[Breakpoints.Large] 
-        ) {
+        } else if (result.breakpoints[Breakpoints.Large]) {
           this.cols = 4;
-        }else if (
-          result.breakpoints[Breakpoints.XLarge] 
-        ) {
+        } else if (result.breakpoints[Breakpoints.XLarge]) {
           this.cols = 5;
         }
       });
@@ -196,8 +195,191 @@ export class CardComponent implements OnInit {
           },
         ],
       },
+      {
+        id: 'bcdghefxsadasxazacasdas',
+        title: 'Kurbağa Kuki',
+        categories: ['Hayvanlar'],
+        summary: 'Kurbağa Kuki ormanda giderken',
+        thumbnail_url:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
+        age: '2',
+        pages: [
+          {
+            id: 1,
+            image_url:
+              'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
+            index_number: 0,
+            tale_snippet:
+              'Tavşan Zıpzıp birgün ormanda giderken. Bir ayıya rastlamış.',
+          },
+          {
+            id: 2,
+            image_url:
+              'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
+            index_number: 1,
+            tale_snippet: 'Ayıya gülümseyerek merhaba demiş.',
+          },
+        ],
+      },
+      {
+        id: 'bcdghefxsadasxazacasdas',
+        title: 'Kurbağa Kuki',
+        categories: ['Hayvanlar'],
+        summary: 'Kurbağa Kuki ormanda giderken',
+        thumbnail_url:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
+        age: '2',
+        pages: [
+          {
+            id: 1,
+            image_url:
+              'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
+            index_number: 0,
+            tale_snippet:
+              'Tavşan Zıpzıp birgün ormanda giderken. Bir ayıya rastlamış.',
+          },
+          {
+            id: 2,
+            image_url:
+              'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
+            index_number: 1,
+            tale_snippet: 'Ayıya gülümseyerek merhaba demiş.',
+          },
+        ],
+      },
+      {
+        id: 'bcdghefxsadasxazacasdas',
+        title: 'Kurbağa Kuki',
+        categories: ['Hayvanlar'],
+        summary: 'Kurbağa Kuki ormanda giderken',
+        thumbnail_url:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
+        age: '2',
+        pages: [
+          {
+            id: 1,
+            image_url:
+              'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
+            index_number: 0,
+            tale_snippet:
+              'Tavşan Zıpzıp birgün ormanda giderken. Bir ayıya rastlamış.',
+          },
+          {
+            id: 2,
+            image_url:
+              'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
+            index_number: 1,
+            tale_snippet: 'Ayıya gülümseyerek merhaba demiş.',
+          },
+        ],
+      },
+      {
+        id: 'bcdghefxsadasxazacasdas',
+        title: 'Kurbağa Kuki',
+        categories: ['Hayvanlar'],
+        summary: 'Kurbağa Kuki ormanda giderken',
+        thumbnail_url:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
+        age: '2',
+        pages: [
+          {
+            id: 1,
+            image_url:
+              'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
+            index_number: 0,
+            tale_snippet:
+              'Tavşan Zıpzıp birgün ormanda giderken. Bir ayıya rastlamış.',
+          },
+          {
+            id: 2,
+            image_url:
+              'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
+            index_number: 1,
+            tale_snippet: 'Ayıya gülümseyerek merhaba demiş.',
+          },
+        ],
+      },
+      {
+        id: 'bcdghefxsadasxazacasdas',
+        title: 'Kurbağa Kuki',
+        categories: ['Hayvanlar'],
+        summary: 'Kurbağa Kuki ormanda giderken',
+        thumbnail_url:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
+        age: '2',
+        pages: [
+          {
+            id: 1,
+            image_url:
+              'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
+            index_number: 0,
+            tale_snippet:
+              'Tavşan Zıpzıp birgün ormanda giderken. Bir ayıya rastlamış.',
+          },
+          {
+            id: 2,
+            image_url:
+              'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
+            index_number: 1,
+            tale_snippet: 'Ayıya gülümseyerek merhaba demiş.',
+          },
+        ],
+      },
+      {
+        id: 'bcdghefxsadasxazacasdas',
+        title: 'Kurbağa Kuki',
+        categories: ['Hayvanlar'],
+        summary: 'Kurbağa Kuki ormanda giderken',
+        thumbnail_url:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
+        age: '2',
+        pages: [
+          {
+            id: 1,
+            image_url:
+              'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
+            index_number: 0,
+            tale_snippet:
+              'Tavşan Zıpzıp birgün ormanda giderken. Bir ayıya rastlamış.',
+          },
+          {
+            id: 2,
+            image_url:
+              'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
+            index_number: 1,
+            tale_snippet: 'Ayıya gülümseyerek merhaba demiş.',
+          },
+        ],
+      },
+      {
+        id: 'bcdghefxsadasxazacasdas',
+        title: 'Kurbağa Kuki',
+        categories: ['Hayvanlar'],
+        summary: 'Kurbağa Kuki ormanda giderken',
+        thumbnail_url:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
+        age: '2',
+        pages: [
+          {
+            id: 1,
+            image_url:
+              'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
+            index_number: 0,
+            tale_snippet:
+              'Tavşan Zıpzıp birgün ormanda giderken. Bir ayıya rastlamış.',
+          },
+          {
+            id: 2,
+            image_url:
+              'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
+            index_number: 1,
+            tale_snippet: 'Ayıya gülümseyerek merhaba demiş.',
+          },
+        ],
+      },
     ];
   }
+
   openDialog(age: string) {
     this.dialog.open(DialogDataExampleDialog, { data: age });
   }
@@ -207,5 +389,10 @@ export class CardComponent implements OnInit {
       this.openDialog(tale.age);
     }
     this.router.navigate(['/tale']);
+  }
+
+  public getServerData(event?: PageEvent) {
+    console.log('Page Event:', event);
+    return event;
   }
 }

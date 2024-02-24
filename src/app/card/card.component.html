@@ -1,9 +1,14 @@
 <body>
   <div class="home-header d-flex">
-    <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/13871.png" alt="tale-craft-logo" height="56px" class="m-1">
+    <img
+      src="https://s2.coinmarketcap.com/static/img/coins/64x64/13871.png"
+      alt="tale-craft-logo"
+      height="56px"
+      class="m-1"
+    />
     <h4 class="p-3">Tale Craft - Kendi Masalını Oluştur!</h4>
   </div>
-  <mat-grid-list cols={{cols}} rowHeight="1:1">
+  <mat-grid-list cols="{{ cols }}" rowHeight="1:1">
     <mat-grid-tile *ngFor="let item of tales; let i = index">
       <div *ngIf="item.age">
         <mat-card
@@ -61,4 +66,13 @@
       </div>
     </mat-grid-tile>
   </mat-grid-list>
+
+  <mat-paginator
+    #paginator
+    [length]="tales.length"
+    [pageSize]="10"
+    aria-label="Select page"
+    (page)="pageEvent = getServerData($event)"
+  >
+  </mat-paginator>
 </body>
