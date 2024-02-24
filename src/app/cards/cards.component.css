@@ -1,9 +1,17 @@
 .example-card {
     max-width: 350px;
-    cursor: pointer;
   }
   
   .example-header-image {
-    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2022/12/17/Cute-And-Adorable-Cartoon-Fluffy-White-Bunny-4k-52849116-1.png');
+    background-image: url('https://st3.depositphotos.com/1915171/12656/v/450/depositphotos_126563866-stock-illustration-plus-two-sign-add-two.jpg');
     background-size: cover;
+  }
+
+
+  .example-card {
+    max-width: 350px;
+  }
+
+  body{
+    background-color: rgb(90, 57, 65);
   }
