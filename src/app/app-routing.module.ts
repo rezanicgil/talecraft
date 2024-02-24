@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SliderComponent } from './slider/slider.component';
-import { CardsComponent } from './cards/cards.component';
+import { CardComponent } from './card/card.component';
 
 const routes: Routes = [
-  { path: '', component: CardsComponent },
+  { path: '', component: CardComponent },
   { path: 'tale', component: SliderComponent },
 ];
 

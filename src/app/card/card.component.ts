@@ -8,13 +8,13 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogDataExampleDialog } from '../dialog/dialog.component';
 
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrl: './cards.component.css',
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrl: './card.component.css',
   standalone: true,
   imports: [MatCardModule, MatButtonModule, MatDividerModule, MatBadgeModule],
 })
-export class CardsComponent {
+export class CardComponent {
   constructor(private router: Router, public dialog: MatDialog) {}
 
   openDialog() {

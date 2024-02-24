@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SliderComponent } from './slider/slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CardsComponent } from './cards/cards.component';
+import { CardComponent } from './card/card.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DialogComponent } from './dialog/dialog.component';
 
@@ -18,7 +18,7 @@ import { DialogComponent } from './dialog/dialog.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CardsComponent
+    CardComponent
   ],
   providers: [
     provideAnimationsAsync()
