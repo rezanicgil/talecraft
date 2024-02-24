@@ -39,8 +39,14 @@ body{
     height: 20px;
   }
 
-  mat-icon.mat-card-avatar {
-    width: 60px;
-    height: 40px;
-    font-size: 40px;
+  .container-fluid {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
   }
