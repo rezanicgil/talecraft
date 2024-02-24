@@ -77,7 +77,25 @@ img.d-block {
 
 .sticky-text:hover {
   cursor: pointer;
-  color: rgb(224, 241, 243);
+  color: rgb(186, 238, 244);
+}
+
+
+.sticky-text-left {
+  position: fixed; /* Elemanı sabitler */
+  bottom: 0; /* Alt kenardan konumlandırır */
+  right: 0; /* Sol kenardan konumlandırır */
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arkaplan */
+  color: white; /* Yazı rengi */
+  padding: 10px; /* İç boşluk */
+  margin: 10px; /* Dış boşluk */
+  border-radius: 5px; /* Köşeleri yuvarlaklaştırır */
+  font-size: x-large;
+}
+
+.sticky-text-left:hover {
+  cursor: pointer;
+  color: rgb(186, 238, 244);
 }
 
 
@@ -86,6 +104,18 @@ img.d-block {
     position: fixed; /* Elemanı sabitler */
     bottom: 0; /* Alt kenardan konumlandırır */
     left: 0; /* Sol kenardan konumlandırır */
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arkaplan */
+    color: white; /* Yazı rengi */
+    padding: 10px; /* İç boşluk */
+    margin: 10px; /* Dış boşluk */
+    border-radius: 5px; /* Köşeleri yuvarlaklaştırır */
+    font-size: large;
+  }
+
+  .sticky-text-left {
+    position: fixed; /* Elemanı sabitler */
+    bottom: 0; /* Alt kenardan konumlandırır */
+    right: 0; /* Sol kenardan konumlandırır */
     background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arkaplan */
     color: white; /* Yazı rengi */
     padding: 10px; /* İç boşluk */

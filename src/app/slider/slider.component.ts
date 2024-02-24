@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-slider',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrl: './slider.component.css',
 })
 export class SliderComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, @Inject(DOCUMENT) document: Document) {}
   images = [
     'https://moewalls.com/wp-content/uploads/2022/09/guardian-tales-thumb.jpg',
     'https://rare-gallery.com/uploads/posts/1254240-disney-snow-white-fairy-tale.jpg',
@@ -16,5 +17,20 @@ export class SliderComponent {
 
   goHomepage() {
     this.router.navigate(['/']);
+  }
+
+  toggleSound() {
+    var audioElement = document.getElementById(
+      'audioPlayer'
+    ) as HTMLMediaElement;
+    var soundTxtElement = document.getElementById(
+      'sound'
+    ) as HTMLParagraphElement;
+    audioElement.muted = !audioElement.muted;
+    if (audioElement.muted) {
+      soundTxtElement.innerHTML = 'Sesi Aç';
+    } else {
+      soundTxtElement.innerHTML = 'Sesi Kapat';
+    }
   }
 }
