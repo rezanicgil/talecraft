@@ -1,10 +1,9 @@
 <body>
-  <div></div>
   <div class="text-center">
     <h3 class="p-3">Tüm Masallar</h3>
   </div>
-  <div class="container-fluid d-flex justify-content-center align-items-center">
-    <mat-card class="example-card">
+  <div class="container-fluid d-flex justify-content-center align-items-center" >
+    <mat-card class="example-card w-100 h-100" matBadge="+2" matBadgePosition="before" matBadgeColor="accent" (click)="openDialog()">
       <mat-card-header class="title-center ">
         <mat-card-title class="m-1">Tavşan Zıpzıp</mat-card-title>
       </mat-card-header>
@@ -17,39 +16,7 @@
         <p class="tale-card-txt mt-3">
           Tavşan Zıp Zıp birgün...
         </p>
-        <button mat-raised-button class="read-btn m-3" (click)="openTale()">OKU</button>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="example-card">
-      <mat-card-header class="title-center ">
-        <mat-card-title class="m-1">Tavşan Zıpzıp</mat-card-title>
-      </mat-card-header>
-      <img 
-        mat-card-image
-        src="https://c4.wallpaperflare.com/wallpaper/379/455/753/cartoon-rabbit-best-animation-movies-of-2016-the-secret-life-of-pets-wallpaper-preview.jpg"
-        alt="Photo of a Shiba Inu"
-      />
-      <mat-card-content class="d-flex">
-        <p class="tale-card-txt mt-3">
-          Tavşan Zıp Zıp birgün...
-        </p>
-        <button mat-raised-button class="read-btn m-3" (click)="openTale()">OKU</button>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="example-card">
-      <mat-card-header class="title-center ">
-        <mat-card-title class="m-1">Tavşan Zıpzıp</mat-card-title>
-      </mat-card-header>
-      <img 
-        mat-card-image
-        src="https://c4.wallpaperflare.com/wallpaper/379/455/753/cartoon-rabbit-best-animation-movies-of-2016-the-secret-life-of-pets-wallpaper-preview.jpg"
-        alt="Photo of a Shiba Inu"
-      />
-      <mat-card-content class="d-flex">
-        <p class="tale-card-txt mt-3">
-          Tavşan Zıp Zıp birgün...
-        </p>
-        <button mat-raised-button class="read-btn m-3" (click)="openTale()">OKU</button>
+        <button mat-raised-button class="read-btn m-3" (click)="openTale()" >OKU</button>
       </mat-card-content>
     </mat-card>
   </div>

@@ -1,3 +1,7 @@
+
+body{
+  background-color: rgb(224, 241, 243);
+}
 .example-card {
     max-width: 350px;
   }
@@ -14,15 +18,11 @@
   }
 
   .example-card {
-    margin-top: 30px;
     max-width: 280px;
-    border-radius: 30px;
-    box-shadow: -1px 6px 65px -24px;
+    border-radius: 10px;
+    margin-left: 13px;
   }
 
-  body{
-    background-color: rgb(192, 229, 234);
-  }
 
   .tale-card-txt {
     font-size: small;
@@ -37,4 +37,10 @@
   .read-btn {
     width: 20px!important;
     height: 20px;
+  }
+
+  mat-icon.mat-card-avatar {
+    width: 60px;
+    height: 40px;
+    font-size: 40px;
   }
