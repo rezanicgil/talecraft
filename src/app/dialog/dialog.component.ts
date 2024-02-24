@@ -2,6 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import {
   MatDialog,
+  MAT_DIALOG_DATA,
   MatDialogTitle,
   MatDialogContent,
 } from '@angular/material/dialog';
@@ -12,12 +13,18 @@ import {
   standalone: true,
   imports: [MatButtonModule],
 })
+
+
 export class DialogComponent {
   constructor(public dialog: MatDialog) {}
 
-  openDialog() {
-    this.dialog.open(DialogDataExampleDialog);
+
+  openDialog(data: string) {
+    this.dialog.open(DialogDataExampleDialog, {
+      data: data,
+    });
   }
+
 }
 
 @Component({
@@ -26,4 +33,6 @@ export class DialogComponent {
   standalone: true,
   imports: [MatDialogTitle, MatDialogContent],
 })
-export class DialogDataExampleDialog {}
+export class DialogDataExampleDialog {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: string) {}
+}

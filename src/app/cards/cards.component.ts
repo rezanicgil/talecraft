@@ -18,10 +18,11 @@ export class CardsComponent {
   constructor(private router: Router, public dialog: MatDialog) {}
 
   openDialog() {
-    this.dialog.open(DialogDataExampleDialog);
+    this.dialog.open(DialogDataExampleDialog, {data: '2'});
   }
 
   openTale() {
+    this.openDialog();
     this.router.navigate(['/tale']);
   }
 }
