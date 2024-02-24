@@ -7,11 +7,34 @@
     background-size: cover;
   }
 
+  img {
+    max-height: 200px;
+    width: auto;
+    object-fit: scale-down;
+  }
 
   .example-card {
-    max-width: 350px;
+    margin-top: 30px;
+    max-width: 280px;
+    border-radius: 30px;
+    box-shadow: -1px 6px 65px -24px;
   }
 
   body{
-    background-color: rgb(90, 57, 65);
+    background-color: rgb(192, 229, 234);
+  }
+
+  .tale-card-txt {
+    font-size: small;
+  }
+
+  .title-center {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+  }
+
+  .read-btn {
+    width: 20px!important;
+    height: 20px;
   }
