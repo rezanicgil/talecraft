@@ -1,45 +1,64 @@
 <body>
-  <div class="text-center">
-    <h3 class="p-3">Tüm Masallar</h3>
+  <div class="home-header d-flex">
+    <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/13871.png" alt="tale-craft-logo" height="56px" class="m-1">
+    <h4 class="p-3">Tale Craft - Kendi Masalını Oluştur!</h4>
   </div>
-  <div class="container-fluid d-flex justify-content-center align-items-center" >
-    <div *ngFor="let item of tales; let i = index">
+  <mat-grid-list cols={{cols}} rowHeight="1:1">
+    <mat-grid-tile *ngFor="let item of tales; let i = index">
       <div *ngIf="item.age">
-        <mat-card class="example-card w-100 h-100" matBadge="+{{item.age}}" matBadgePosition="before" matBadgeColor="accent" (click)="openDialog">
-          <mat-card-header class="truncate">
-            <mat-card-title class="mb-2">{{item.title}}</mat-card-title>
+        <mat-card
+          class="example-card"
+          matBadge="+{{ item.age }}"
+          matBadgePosition="before"
+          matBadgeColor="accent"
+          (click)="(openDialog)"
+        >
+          <mat-card-header>
+            <mat-card-title class="mb-2">{{ item.title }}</mat-card-title>
           </mat-card-header>
-          <img 
+          <img
             mat-card-image
-            src={{item.thumbnail_url}}
+            src="{{ item.thumbnail_url }}"
             alt="Tale Thumbnail"
           />
           <mat-card-content class="d-flex">
             <p class="tale-card-txt mt-3 truncate">
-              {{item.summary}}
+              {{ item.summary }}
             </p>
-            <button mat-raised-button class="read-btn m-3" (click)="openTale(item)" >OKU</button>
+            <button
+              mat-raised-button
+              class="read-btn m-3"
+              (click)="openTale(item)"
+            >
+              OKU
+            </button>
           </mat-card-content>
         </mat-card>
       </div>
       <div *ngIf="!item.age">
         <mat-card class="example-card w-100 h-100">
           <mat-card-header class="truncate">
-            <mat-card-title class="mb-2">{{item.title}}</mat-card-title>
+            <mat-card-title class="mb-2">{{ item.title }}</mat-card-title>
           </mat-card-header>
-          <img 
+          <img
             mat-card-image
-            src={{item.thumbnail_url}}
+            src="{{ item.thumbnail_url }}"
             alt="Tale Thumbnail"
           />
           <mat-card-content class="d-flex">
             <p class="tale-card-txt mt-3 truncate">
-              {{item.summary}}
+              {{ item.summary }}
             </p>
-            <button mat-raised-button class="read-btn m-3" (click)="openTale(item)" >OKU</button>
+            <button
+              mat-raised-button
+              class="read-btn m-3"
+              (click)="openTale(item)"
+            >
+              OKU
+            </button>
           </mat-card-content>
         </mat-card>
       </div>
-    </div>
-  </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </body>
