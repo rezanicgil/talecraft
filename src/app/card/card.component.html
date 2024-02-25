@@ -30,14 +30,17 @@
             <p class="tale-card-txt mt-3 truncate">
               {{ item.summary }}
             </p>
-            <button
-              mat-raised-button
-              class="read-btn m-3"
-              (click)="openTale(item)"
-            >
-              OKU
-            </button>
           </mat-card-content>
+          <div class="d-flex justify-content-center alignt-items-center">
+            <button
+            mat-raised-button
+            class="read-btn m-3"
+            (click)="openTale(item)"
+          >
+            OKU
+          </button>
+          </div>
+      
         </mat-card>
       </div>
       <div *ngIf="!item.age">
@@ -54,14 +57,16 @@
             <p class="tale-card-txt mt-3 truncate">
               {{ item.summary }}
             </p>
-            <button
-              mat-raised-button
-              class="read-btn m-3"
-              (click)="openTale(item)"
-            >
-              OKU
-            </button>
           </mat-card-content>
+          <div class="d-flex justify-content-center alignt-items-center">
+            <button
+            mat-raised-button
+            class="read-btn m-3"
+            (click)="openTale(item)"
+          >
+            OKU
+          </button>
+          </div>
         </mat-card>
       </div>
     </mat-grid-tile>

@@ -49,7 +49,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 160px;
+    max-width: 300px;
   }
 
   .home-header {

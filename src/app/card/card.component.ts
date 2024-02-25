@@ -100,7 +100,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
@@ -201,7 +201,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
@@ -227,7 +227,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
@@ -253,7 +253,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
@@ -279,7 +279,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
@@ -305,7 +305,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
@@ -331,7 +331,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
@@ -357,7 +357,7 @@ export class CardComponent implements OnInit {
         id: 'bcdghefxsadasxazacasdas',
         title: 'Kurbağa Kuki',
         categories: ['Hayvanlar'],
-        summary: 'Kurbağa Kuki ormanda giderken',
+        summary: 'Kurbağa Kuki ormanda giderken bir yılan iile karşılaşır...',
         thumbnail_url:
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05427869-908a-41ed-a9a6-ec6cf5e4a979/dg2qmrf-75f5f833-4255-4085-9244-959328756bb4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1NDI3ODY5LTkwOGEtNDFlZC1hOWE2LWVjNmNmNWU0YTk3OVwvZGcycW1yZi03NWY1ZjgzMy00MjU1LTQwODUtOTI0NC05NTkzMjg3NTZiYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Enorvzl-DyXpNiQkdie_Az0PdDidOLDko3-sqFW2Ngg',
         age: '2',
