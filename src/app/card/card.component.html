@@ -6,7 +6,7 @@
       height="56px"
       class="m-1"
     />
-    <h4 class="p-3">Tale Craft - Kendi Masalını Oluştur!</h4>
+    <h4 class="p-3">Tale Craft - Masal Dünyası!</h4>
   </div>
   <mat-grid-list cols="{{ cols }}" rowHeight="1:1">
     <mat-grid-tile *ngFor="let item of tales; let i = index">
@@ -68,6 +68,7 @@
   </mat-grid-list>
 
   <mat-paginator
+    class="paginator"
     #paginator
     [length]="tales.length"
     [pageSize]="10"

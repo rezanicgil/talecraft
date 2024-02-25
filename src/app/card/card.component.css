@@ -1,6 +1,11 @@
 .example-card {
     max-width: 350px;
   }
+
+  .paginator {
+    background-color: #83C3F7;
+    border-top: 1px solid black;
+  }
   
   .example-header-image {
     background-image: url('https://st3.depositphotos.com/1915171/12656/v/450/depositphotos_126563866-stock-illustration-plus-two-sign-add-two.jpg');
@@ -48,5 +53,6 @@
   }
 
   .home-header {
-    background-color: rgb(255, 215, 39);
+    background-color: rgb(0, 0, 0);
+    color: #F49D4B
   }
