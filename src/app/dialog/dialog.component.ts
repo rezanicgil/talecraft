@@ -36,3 +36,14 @@ export class DialogComponent {
 export class DialogDataExampleDialog {
   constructor(@Inject(MAT_DIALOG_DATA) public data: string) {}
 }
+
+
+@Component({
+  selector: 'home-dialog',
+  templateUrl: 'home-dialog.html',
+  standalone: true,
+  imports: [MatDialogTitle, MatDialogContent],
+})
+export class HomeDialog {
+  constructor() {}
+}

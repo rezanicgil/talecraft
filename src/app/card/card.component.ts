@@ -5,7 +5,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { Router } from '@angular/router';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogDataExampleDialog } from '../dialog/dialog.component';
+import { DialogDataExampleDialog, HomeDialog } from '../dialog/dialog.component';
 import { Tale } from '../models/tale.model';
 import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -37,7 +37,9 @@ export class CardComponent implements OnInit {
     private breakpointObserver: BreakpointObserver
   ) {}
 
+
   ngOnInit(): void {
+    this.checkFirstTimeHomeDialog();
     this.breakpointObserver
       .observe([
         Breakpoints.XSmall,
@@ -391,6 +393,14 @@ export class CardComponent implements OnInit {
     this.router.navigate(['/tale']);
   }
 
+  checkFirstTimeHomeDialog() {
+    if (!localStorage.getItem('visited')) {
+      this.dialog.open(HomeDialog, {
+      });
+
+      localStorage.setItem('visited', 'true');
+    }
+  }
   public getServerData(event?: PageEvent) {
     console.log('Page Event:', event);
     return event;
