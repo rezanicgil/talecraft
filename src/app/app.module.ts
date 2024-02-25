@@ -7,7 +7,6 @@ import { SliderComponent } from './slider/slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CardComponent } from './card/card.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,7 @@ import { DialogComponent } from './dialog/dialog.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CardComponent
+    CardComponent,
   ],
   providers: [
     provideAnimationsAsync()
